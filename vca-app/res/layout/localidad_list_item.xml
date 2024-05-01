@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="8dip"
+    android:paddingBottom="8dip">
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+    
+        <TextView
+            android:id="@+id/dep_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingRight="8dip"
+            android:textSize="22sp"
+        />
+            
+        <TextView
+            android:id="@+id/mun_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dip"
+            android:textSize="22sp"
+        />
+    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+    
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textStyle="bold"
+            android:textSize="@dimen/elementolista"
+            android:paddingLeft="8dip"
+        />
+    
+        <TextView
+            android:id="@+id/proc_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingLeft="3dip"
+        />
+    
+    </LinearLayout>
+    
+</LinearLayout>

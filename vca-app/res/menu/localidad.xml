@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   
+    <item android:id="@+id/MENU_HOME" 
+        android:title="@string/home" 
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_menu_home"></item>
+    
+    <item android:id="@+id/MENU_BACK" 
+        android:title="@string/back" 
+        android:showAsAction="always|withText"
+        android:icon="@drawable/ic_menu_revert"></item>
+    
+    <item android:id="@+id/MENU_EXIT" 
+        android:title="@string/exit" 
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_menu_close_clear_cancel"></item>
+
+</menu>

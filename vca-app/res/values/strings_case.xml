@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="case_add">Agregar Caso</string>
+    <string name="test_add">Agregar Muestra</string>
+    <string name="case_new">Nuevo caso</string>
+    <string name="test_new">Nueva muestra</string>
+    
+    <string name="confirm_case_add">Desea agregar un nuevo caso?</string>
+    <string name="confirm_test_add">Desea agregar un nuevo registro?</string>
+    <string name="confirm_case_edit">Desea editar este caso?</string>
+    <string name="confirm_test_edit">Desea editar este registro?</string>
+    <string name="confirm_case_delete">Desea eliminar este caso?</string>
+    <string name="confirm_test_delete">Desea eliminar este registro?</string>
+    
+    <string name="pdx_add">Agregar Punto de Diagnóstico</string>
+    <string name="pdx_new">Nuevo punto de diagnóstico</string>
+    <string name="confirm_pdx_add">Desea agregar un nuevo punto de diagnóstico?</string>
+    <string name="confirm_pdx_edit">Desea editar este punto de diagnóstico?</string>
+    <string name="confirm_pdx_delete">Desea eliminar este punto de diagnóstico?</string>
+    
+    <string name="criad_add">Agregar Criadero</string>
+    <string name="criad_new">Nuevo Cridero</string>
+    <string name="confirm_criad_add">Desea agregar un nuevo criadero?</string>
+    <string name="confirm_criad_edit">Desea editar este criadero?</string>
+    <string name="confirm_criad_delete">Desea eliminar este criadero?</string>
+    
+    <string name="vpdx_add">Agregar Visita a Punto de Diagnóstico</string>
+    <string name="vpdx_new">Nuevo visita a punto de diagnóstico</string>
+    <string name="confirm_vpdx_add">Desea agregar una nueva visita a punto de diagnóstico?</string>
+    <string name="confirm_vpdx_edit">Desea editar esta visita a punto de diagnóstico?</string>
+    <string name="confirm_vpdx_delete">Desea eliminar esta visita a punto de diagnóstico?</string>
+    
+    
+    <string name="txcriad_add">Agregar Tratamiento a Criadero</string>
+    <string name="txcriad_new">Nuevo Tratamiento a Cridero</string>
+    <string name="confirm_txcriad_add">Desea agregar un nuevo tratamiento a este criadero?</string>
+    <string name="confirm_txcriad_edit">Desea editar este tratamiento a criadero?</string>
+    <string name="confirm_txcriad_delete">Desea eliminar este tratamiento de criadero?</string>
+    
+    <string name="ptcriad_add">Agregar Punto a Criadero</string>
+    <string name="ptcriad_new">Nuevo Punto del Cridero</string>
+    <string name="confirm_ptcriad_add">Desea agregar un nuevo punto a este criadero?</string>
+    <string name="confirm_ptcriad_edit">Desea editar este punto de criadero?</string>
+    <string name="confirm_ptcriad_delete">Desea eliminar este punto de criadero?</string>
+    
+    <string name="introCaseMessage">Agregando/Editando Caso Confirmado de Malaria</string>
+    <string name="introCaseMessageHint">Favor ingresar la información requerida</string>
+    
+    <string name="introTestMessage">Agregando/Editando Muestra de Malaria</string>
+    <string name="introTestMessageHint">Favor ingresar la información requerida</string>
+    
+    <string name="introPointMessage">Agregando/Editando Punto de Diagnóstico</string>
+    <string name="introPointMessageHint">Favor ingresar la información requerida</string>
+    
+    <string name="introVisPointMessage">Agregando/Editando Visita a Punto de Diagnóstico</string>
+    <string name="introVisPointMessageHint">Favor ingresar la información requerida</string>
+    
+    <string name="introCriaderoMessage">Agregando/Editando Criadero</string>
+    <string name="introCriaderoMessageHint">Favor ingresar la información requerida</string>
+    
+    <string name="introTxCriaderoMessage">Agregando/Editando Tratamiento a Criadero</string>
+    <string name="introTxCriaderoMessageHint">Favor ingresar la información requerida</string>
+    
+    <string name="codeCase">Código del caso</string>
+    <string name="codeCaseHint">Código único del caso. Es un valor requerido.</string>
+    
+    <string name="localidadF">Localidad:</string>
+    <string name="localidadFHint">Seleccione la localidad. Es un valor requerido.</string>
+    
+    <string name="sintCase">Es un caso sintomático?</string>
+    <string name="sintCaseHint">Es un caso sintomático. Es un valor requerido.</string>
+    
+    <string name="fisDate">Fecha de síntomas</string>
+    <string name="fisDateHint">Ingresar la fecha de inicio de síntomas, si no está disponible o es asintomático ingresar la fecha de muestra. Es un valor requerido.</string>
+    
+    <string name="mxDate">Fecha de muestra</string>
+    <string name="mxDateHint">Fecha en que fue tomada la muestra para el diágnostico. Es un valor requerido.</string>
+    
+    <string name="busqueda">Tipo de detección</string>
+    <string name="busquedaHint">Procedimiento en que fue tomada la muestra para el diágnostico. Es un valor requerido.</string>
+    
+    <string name="mxType">Tipo de prueba</string>
+    <string name="mxTypeHint">Seleccionar el tipo de prueba del diágnostico. Es un valor requerido.</string>
+    
+    
+    <string name="cuiCase">CUI o documento de identidad</string>
+    <string name="cuiCaseHint">CUI o documento de identidad del caso. Es un valor opcional.</string>
+    
+    <string name="codE1">Número de muestra</string>
+    <string name="codE1Hint">Número de muestra ejemplo, EJ-1/1. Es un valor opcional.</string>
+    
+    <string name="codCasa">Número de contador de luz</string>
+    <string name="codCasaHint">Número de contador de luz de la casa donde habita el caso. Es un valor requerido.</string>
+    
+    <string name="nameCase">Nombre u otra referencia</string>
+    <string name="nameCaseHint">Nombre u otra referencia del caso. Es un valor opcional.</string>
+    
+    <string name="infoCase">Información adicional del caso</string>
+    <string name="infoCaseHint">Información adicional del caso. Es un valor opcional.</string>
+    
+    <string name="sexo">Sexo de la persona</string>
+    <string name="sexoHint">Seleccionar el sexo de la persona. Es un valor requerido.</string>
+    
+    <string name="embarazada">Embarazada</string>
+    <string name="embarazadaHint">Seleccionar si la persona está embarazada o no. Es un valor requerido.</string>
+    
+    
+    <string name="edad">Edad de la persona</string>
+    <string name="edadHint">Escribir la edad de la persona (escribir cero cuando es menor que un año). Es un valor requerido.</string>
+    
+    <string name="menor6meses">Menor de 6 meses</string>
+    <string name="menor6mesesHint">Seleccionar si la persona es menor de 6 meses o no. Es un valor requerido.</string>
+    
+    <string name="mxProactiva">Total de muestras proactivas</string>
+    <string name="mxProactivaHint">Ingresar el total de muestras proactivas que se realizaron en la vivienda. Es un valor requerido.</string>
+    
+    <string name="mxReactiva">Total de muestras reactivas</string>
+    <string name="mxReactivaHint">Ingresar el total de muestras reactivas que se realizaron en la vivienda. Es un valor requerido.</string>
+    
+    <string name="enterdate">Ingresar fecha de control:</string>
+    <string name="enterresult">Ingresar resultado:</string>
+    <string name="enterdatetx">Ingresar fecha de inicio de tratamiento:</string>
+    <string name="enterresulttx">Ingresar resultado para inicio de Tx:</string>
+    <string name="enterdatetxsusp">Ingresar fecha de suspensión de tratamiento:</string>
+    <string name="enterreasontxsusp">Ingresar razón para suspender Tx:</string>
+    <string name="enteroreasontxsusp">Especificar razón para suspender Tx:</string>
+    
+    <string name="enterreasonlost">Ingresar motivo de pérdida de seguimiento:</string>
+    <string name="enteroreasonlost">Especificar otro motivo de pérdida de seguimiento:</string>
+    
+    
+    <string name="clave">Clave del punto de diagnóstico</string>
+    <string name="claveHint">Clave del punto de diagnóstico. Es un valor requerido y único.</string>
+    
+    <string name="tipo">Tipo de punto de diagnóstico</string>
+    <string name="tipoHint">Seleccione el tipo de punto de diagnóstico. Es un valor requerido.</string>
+    
+    <string name="status">Estado del punto de diagnóstico</string>
+    <string name="statusHint">Seleccione el estado del punto de diagnóstico. Es un valor requerido.</string>
+    
+    <string name="info">Información adicional del punto de diagnóstico</string>
+    <string name="infoHint">Cualquier información adicional del punto de diagnóstico. Es un valor opcional.</string>
+    
+    <string name="tipoC">Tipo de criadero</string>
+    <string name="tipoCHint">Seleccione el tipo de criadero. Es un valor requerido.</string>
+    
+    <string name="infoC">Información de identificación del criadero</string>
+    <string name="infoCHint">Cualquier información para identificación del criadero. Es un valor requerido.</string>
+    
+    <string name="especie">Especies encontradas criadero</string>
+    <string name="especieHint">Seleccionar las especies encontradas criadero. Es un valor opcional, puede seleccionar mas de uno.</string>
+    
+    <string name="size">Tamaño del criadero en metros</string>
+    <string name="sizeHint">Tamaño del criadero en metros. Es un valor opcional.</string>
+    
+    <string name="visitsPx">Visitas al punto de diagnóstico</string>
+    <string name="txCriaderos">Tratamientos aplicados al criadero</string>
+    <string name="pxCriaderos">Puntos del polígono del criadero</string>
+    
+    
+    <string name="visitType">Tipo de visita</string>
+    <string name="visitTypeHint">Seleccionar el tipo de visita que se está realizando. Es un valor requerido.</string>
+    
+    <string name="visitDate">Fecha de visita</string>
+    <string name="visitDateHint">Ingresar la fecha de visita. Es un valor requerido.</string>
+    
+    <string name="obs">Observaciones en la visita</string>
+    <string name="obsHint">Ingresar las observaciones de la visita. Es un valor requerido.</string>
+    
+    <string name="txType">Tipo de tratamiento</string>
+    <string name="txTypeHint">Seleccionar el tipo de tratamiento que se está realizando. Es un valor requerido.</string>
+    
+    <string name="txDate">Fecha de tratamiento</string>
+    <string name="txDateHint">Ingresar la fecha de tratamiento. Es un valor requerido.</string>
+    
+    
+    <string name="obsT">Observaciones en la actividad</string>
+    <string name="obsTHint">Ingresar las observaciones de la actividad. Es un valor requerido.</string>
+    
+</resources>

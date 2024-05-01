@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">Inicio</string>
+    <string name="back">Regresar</string>
+    <string name="exit">Salir</string>
+
+    <string name="cases">Casos de malaria</string>
+    <string name="tests">Muestreo</string>
+    <string name="dxpoints">Puntos de diagnóstico</string>
+    <string name="breedingsites">Criaderos de mosquito</string>
+    <string name="mapeo_upload">Subir los datos</string>
+    <string name="mapeo_download">Descargar los datos</string>
+    
+</resources>

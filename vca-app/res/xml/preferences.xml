@@ -1,0 +1,44 @@
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceScreen
+		android:id="@+id/info"
+		android:key="info"
+		android:title="@string/app_name">
+	</PreferenceScreen>
+	<PreferenceCategory android:title="@string/server_preferences">
+		<EditTextPreference android:id="@+id/server_url" android:key="server_url" android:defaultValue="@string/default_server_url" android:title="@string/server_url" android:dialogTitle="@string/change_server_url" />
+		<EditTextPreference android:id="@+id/username" android:key="username" android:title="@string/prompt_user" android:dialogTitle="@string/change_user" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/app_preferences">
+		<CheckBoxPreference android:id="@+id/barcode" android:key="barcode" android:defaultValue="true" android:title="@string/desc_barcode" />
+		<Preference android:title="@string/update_app_preferences" >
+		    <intent android:action="android.intent.action.VIEW"
+		            android:data="http://localhost:8080/vca/resources/apk/vca-app.apk" />
+		</Preference>
+		<Preference android:title="@string/update_barcodeapp_preferences" >
+		    <intent android:action="android.intent.action.VIEW"
+		            android:data="http://localhost:8080/vca/resources/apk/BarcodeScanner4.31.apk" />
+		</Preference>
+		<PreferenceScreen android:id="@+id/localidad" android:key="localidad" android:defaultValue="@string/default_localidad" android:title="@string/choose_localidad">
+		    <Preference android:key="localidadSeleccionada"/>
+		</PreferenceScreen>
+		<PreferenceScreen android:id="@+id/censador" android:key="censador" android:defaultValue="@string/default_censador" android:title="@string/choose_censador">
+		    <Preference android:key="censadorSeleccionado"/>
+		</PreferenceScreen>
+		<PreferenceScreen android:id="@+id/temporada" android:key="temporada" android:defaultValue="@string/default_temporada" android:title="@string/choose_temporada">
+		    <Preference android:key="temporadaSeleccionada"/>
+		</PreferenceScreen>
+		<PreferenceScreen android:id="@+id/supervisor" android:key="supervisor" android:defaultValue="@string/default_supervisor" android:title="@string/choose_supervisor">
+		    <Preference android:key="supervisorSeleccionado"/>
+		</PreferenceScreen>
+		<PreferenceScreen android:id="@+id/rociador" android:key="rociador" android:defaultValue="@string/default_rociador" android:title="@string/choose_rociador">
+		    <Preference android:key="rociadorSeleccionado"/>
+		</PreferenceScreen>
+		<PreferenceScreen android:id="@+id/brigada" android:key="brigada" android:defaultValue="@string/default_brigada" android:title="@string/choose_brigada">
+		    <Preference android:key="brigadaSeleccionada"/>
+		</PreferenceScreen>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/version_app_preferences"></PreferenceCategory>
+	<PreferenceCategory android:title="@string/versiondate_app_preferences"></PreferenceCategory>
+	<Preference android:key="ultSyncCatalogos"/>
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Strings related to login -->
+    <string name="logo_desc">Pantalla de ingreso</string>
+    <string name="prompt_user">Usuario</string>
+    <string name="change_user">Cambiar Usuario</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Ingresar</string>
+    <string name="menu_cancel">Cancelar</string>
+    <string name="login_progress_signing_in">Ingresando&#8230;</string>
+    <string name="error_invalid_user">Usuario inválido</string>
+    <string name="error_invalid_password">Este password es muy corto</string>
+    <string name="error_incorrect_password">El usuario o password es incorrecto</string>
+    <string name="error_field_required">Es requerido!</string>
+    <string name="error_io_server">No puedo conectar al servidor!</string>
+    <string name="error_notfound_server">No encontrado!</string>
+    <string name="error_wipe_db">Solamente es posible limpiar la base de datos si esta validando entrada desde el servidor!</string>
+	<string name="error_wipe_db_super">Solamente supervisores pueden limpiar la base de datos!</string>
+</resources>

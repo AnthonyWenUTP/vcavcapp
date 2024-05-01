@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string-array name="menu_main">
+        <item>@string/main_1</item>
+        <item>@string/main_2</item>
+        <item>@string/main_4</item>
+        <item>@string/main_5</item>
+        <item>@string/main_3</item>
+        <item>@string/catalog</item>
+        <item>@string/main_download</item>
+    </string-array>
+    
+    <string-array name="menu_census">
+        <item>@string/house_search</item>
+        <item>@string/census_upload</item>
+        <item>@string/census_2</item> 
+        <item>@string/census_exit</item>
+    </string-array>
+    
+    <string-array name="menu_casa">
+        <item>Ver</item>
+        <item>Editar</item>
+        <item>Familia</item>
+        <item>Ubicación</item>
+        <item>Finalizar</item>
+    </string-array>
+    
+   <string-array name="menu_datos">
+        <item>@string/bydate</item>
+        <item>@string/bylocalidad</item>
+        <item>@string/bystatus</item>
+    </string-array>
+    
+    <string-array name="menu_mosquiteros">
+        <item>Buscar vivienda</item>
+        <item>@string/census_upload</item>
+        <item>@string/census_exit</item>
+    </string-array>
+    
+    <string-array name="menu_rociado">
+        <item>Preaviso</item>
+        <item>Rociado</item>
+        <item>Supervisión</item>
+        <item>Buscar vivienda</item>
+        <item>@string/census_upload</item>
+        <item>Resumen rociado</item> 
+        <item>@string/census_exit</item>
+    </string-array>
+    
+    <string-array name="menu_rociado_casa">
+        <item>Preaviso</item>
+        <item>Rociado</item>
+        <item>Ubicación</item>
+        <item>Ver</item>
+        <item>Salir</item>
+    </string-array>
+    
+    <string-array name="menu_mosquiteros_casa">
+        <item>Editar Meta</item>
+        <item>Visitas entrega</item>
+        <item>Evaluación</item>
+        <item>Evaluación personas</item>
+        <item>Evaluación mosquiteros</item>
+        <item>Salir</item>
+    </string-array>
+    
+    <string-array name="menu_datos2">
+        <item>@string/bydate</item>
+        <item>Por estado de la vivienda</item>
+        <item>@string/bystatus</item>
+        <item>Resumen de hoy</item>
+    </string-array>
+    
+    <string-array name="opciones_array">
+        <item>Asignadas a mi</item>
+        <item>Asignadas a cualquiera</item>
+    </string-array>
+    
+    <string-array name="opciones_casas">
+        <item>Todas</item>
+        <item>Sin visita</item>
+        <item>Asignadas</item>
+        <item>Cerradas</item>
+        <item>Renuentes</item>
+        <item>Descartada/Destruida</item>
+        <item>Rociadas total</item>
+        <item>Rociadas parcial</item>
+    </string-array>
+    
+    <string-array name="menu_mapeo">
+        <item>@string/cases</item>
+        <item>@string/tests</item>
+        <item>@string/dxpoints</item>
+        <item>@string/breedingsites</item>
+        <item>@string/mapeo_upload</item>
+        <item>@string/mapeo_download</item> 
+    </string-array>
+    
+    <string-array name="opciones_casos">
+        <item>Todos</item>
+        <item>Confirmado</item>
+        <item>En tratamiento</item>
+        <item>Tratamiento completo</item>
+        <item>Seguimiento negativo</item>
+        <item>Curado</item>
+        <item>No curado</item>
+        <item>Pérdida de seguimiento</item>
+    </string-array>
+    
+    <string-array name="opciones_muestras">
+        <item>Todos</item>
+        <item>Activa</item>
+        <item>Pasiva</item>
+    </string-array>
+    
+    <string-array name="opciones_casos_2">
+        <item>Todos</item>
+        <item>Ultimos 7 días</item>
+        <item>Ultimos 30 días</item>
+        <item>Ultimos 60 días</item>
+    </string-array>
+    
+	<string-array name="opciones_tipos">
+        <item>Todos</item>
+        <item>ColVol</item>
+        <item>Centros de Microscopía</item>
+        <item>POC agroindustria</item>
+        <item>Puesto de Salud</item>
+        <item>CS/CAP</item>
+        <item>Hospital</item>
+        <item>Otro</item>
+    </string-array>
+    
+	
+	<string-array name="opciones_estados">
+        <item>Todos</item>
+        <item>Activo</item>
+        <item>Inactivo</item>
+    </string-array>
+    
+    
+    <string-array name="opciones_resultados">
+        <item>Negativo</item>
+        <item>positivo</item>
+    </string-array>
+    
+    <string-array name="opciones_pruebas">
+        <item>PDR</item>
+        <item>Microscopía</item>
+    </string-array>
+    
+    <string-array name="opciones_tiposc">
+        <item>Todos</item>
+        <item>Productivos</item>
+        <item>Potenciales</item>
+    </string-array>
+    
+    
+    <string-array name="opciones_razones">
+        <item>Cambio de domicilio</item>
+        <item>Trabaja fuera de la localidad</item>
+        <item>Renuencia al tratamiento</item>
+        <item>Reacción adversa al tratamiento</item>
+        <item>Otra razón, especifique</item>
+    </string-array>
+    
+    <string-array name="opciones_razones_txsusp">
+        <item>Suspendió cloroquina primeros 3 días</item>
+        <item>Suspendió primaquina más de 48 horas la primera semana de tratamiento</item>
+        <item>Suspendió en más de dos ocasiones la primaquina durante la segunda semana</item>
+        <item>Otro, Especifique</item>
+    </string-array>
+    
+    <string-array name="menu_caso">
+        <item>Editar</item>
+        <item>Lugar de detección</item>
+        <item>Lugar de infección</item>
+        <item>Inicio de Investigación</item>
+        <item>Fin de Investigación</item>
+        <item>Inicio tratamiento</item>
+        <item>Tratamiento supervisado</item>
+        <item>Suspender tratamiento</item>
+        <item>Fin tratamiento</item>
+        <item>Primer control</item>
+        <item>Segundo control</item>
+        <item>Pérdida caso</item>
+        <item>Eliminar caso</item>
+        
+    </string-array>
+    
+    
+    <string-array name="menu_muestra">
+        <item>Editar</item>
+        <item>Ubicación</item>
+        <item>Eliminar</item>
+    </string-array>
+    
+    <string-array name="menu_criadero">
+        <item>Editar</item>
+        <item>Puntos</item>
+        <item>@string/txCriaderos</item>
+        <item>Eliminar</item>
+    </string-array>
+    
+    <string-array name="menu_punto">
+        <item>Editar</item>
+        <item>Ubicación</item>
+        <item>@string/visitsPx</item>
+        <item>Eliminar</item>
+    </string-array>
+    
+    <string-array name="tx_sup">
+        <item>Tratamiento 1</item>
+        <item>Tratamiento 2</item>
+        <item>Tratamiento 3</item>
+        <item>Tratamiento 4</item>
+        <item>Tratamiento 5</item>
+        <item>Tratamiento 6</item>
+        <item>Tratamiento 7</item>
+        <item>Tratamiento 8</item>
+        <item>Tratamiento 9</item>
+        <item>Tratamiento 10</item>
+        <item>Tratamiento 11</item>
+        <item>Tratamiento 12</item>
+        <item>Tratamiento 13</item>
+        <item>Tratamiento 14</item>
+    </string-array>
+    
+</resources>

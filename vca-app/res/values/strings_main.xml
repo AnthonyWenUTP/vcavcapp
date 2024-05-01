@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_1"> Censo Viviendas</string>
+    <string name="main_2"> Rociado Residual Intradomiciliario</string>
+    <string name="main_3"> Seleccionar localidad</string>
+    <string name="main_4"> Distribución Mosquiteros</string>
+    <string name="main_5"> Módulo Mapeo</string>
+    <string name="main_download"> Descargar Todo</string>
+    <string name="catalog"> Catálogos</string>
+    <string name="casas"> Casas anteriores</string>
+    
+    <string name="census_1"> Ingresar Viviendas</string>
+    <string name="census_2"> Resumen Censo</string>
+    <string name="census_upload"> Subir Datos</string>
+    <string name="census_exit"> Regresar</string>
+    
+</resources>

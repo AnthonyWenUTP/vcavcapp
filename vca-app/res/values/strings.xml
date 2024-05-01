@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name2">VCA MSPAS</string>
+    <string name="main_header">Actividades de control de vectores</string>
+    <string name="desc_logo">Ministerio de Salud Guatemala</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw</string>
+    <string name="success">Operación exitosa!</string>
+    <string name="error">Ha ocurrido un error!</string>
+    <string name="errordb">Ha ocurrido un error, base de datos no existe!</string>
+    <string name="loading">Cargando.....</string>
+    <string name="validating">Validando.....</string>
+    <string name="pleasewait">Por favor espere..</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="confirm">Confirmar</string>
+    <string name="exiting">Realmente desea Salir?</string>
+    <string name="downloading">Descargar toda la info del servidor? Esta operacion descarta toda la informacion actual en el dispositivo</string>
+    <string name="pin_download">Pin para descargar toda la info del servidor</string>
+    <string name="downloadingcat">Descargar todos los catalogos del servidor? Esta operacion modifica los catalogos actuales en el dispositivo</string>
+    <string name="downloadingcasas">Descargar todas las casas anteriores del servidor?</string>
+    <string name="uploading">Enviar toda la info al servidor?</string>
+    <string name="desc_barcode">Escanear código de barras</string>
+    <string name="parametro">Parámetro de búsqueda</string>
+    <string name="method">Método:</string>
+    <string name="ok">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Quitar</string>
+    <string name="add">Agregar</string>
+    <string name="select">Seleccionar</string>
+    <string name="enter">Ingresar</string>
+    <string name="save">Guardar</string>
+    <string name="form">Formulario</string>
+    <string name="barcode_error">Escaner de código de barras no disponible</string>
+    <string name="barcode_code">Escanee el Código de Barras</string>
+    <string name="search_hint">Ingresar texto de búsqueda</string>
+    <string name="code_error">Identificador inválido!</string>
+    <string name="data_error">Este dato es inválido!</string>
+    <string name="pin_error">Número de pin inválido!</string>
+    <string name="bd_error">Error de acceso a base de datos, se ha producido un error inesperado!\n La aplicación se va a cerrar, sentimos el inconveniente.</string>
+    <string name="code_notfound">Identificador no encontrado!</string>
+    <string name="scan_error">Esta lectura es inválida!</string>
+    <string name="no_items">No hay registros!</string>
+    <string name="process_canceled">Proceso cancelado</string>
+    <string name="no_items_tosend">No hay registros para enviar!</string>
+    <string name="storage_error">Medio de almacenamiento no disponible!</string>
+    <string name="err_not_completed">No ha completado el formulario</string>
+    <string name="err_duplicated">Error! Codigo ya existe en la base de datos!</string>
+    <string name="err_cancel">Ha cancelado el proceso!</string>
+    <string name="verify">Esta acción no se puede deshacer, desea proceder???</string>
+    <string name="data_not_sent">Hay datos sin enviar en el equipo, estos datos se borrarán si continúa. Aún desea descargar la información del servidor?</string>
+    <string name="wipe_db_confirm">Al marcar esta opción borrará la base de datos del equipo, los datos almacenados se borrarán si continúa. Aún desea marcar esta opción?\n\n
+        								Solamente está disponible esta opción si verifica en el servidor y tiene rol de supervisor!</string>
+    <string name="change_date">Seleccionar fecha</string>
+    <string name="next">Siguiente</string>
+    <string name="prev">Previo</string>
+    <string name="finish">Finalizar</string>
+    <string name="review">Revisar</string>
+    <string name="is_null">(Nulo)</string>
+    <string name="submit_confirm_message">Guardar la informacion en la base de datos?</string>
+    <string name="submit_confirm_button">Guardar</string>
+    <string name="remember">Recordar</string>
+    <string name="outofrange">Fuera de rango</string>
+    <string name="gpstitle">Configuración GPS</string>
+    <string name="gpsquestion">El GPS no está habilitado. Quiere ir al menú de configuración y activarlo?</string>
+     <string name="ubccheck"> Comprobar satélites</string>
+     <string name="get_location">Obtener ubicación</string>
+     <string name="getting_location">Obteniendo ubicación..</string>
+     <string name="please_wait_long">Por favor espere..</string>
+     <string name="save_point">Guardar ubicación</string>
+     <string name="cancel_location">Cancelar</string>
+     <string name="location_provider_accuracy">Usando %1$s. proximidad es %2$s m.</string>
+     <string name="location_accuracy">Proximidad es %1$s m</string>
+     <string name="location_metadata">Satélites disponibles: %1$d/24\n\nTiempo transcurrido: %2$s</string>
+     
+     
+    <string name="exactitud">Exactitud</string>
+    <string name="altitud">Altitud</string>
+    
+    <string name="localidad">Localidad</string>
+    <string name="censador">Censador</string>
+    <string name="supervisor">Supervisor</string>
+    <string name="rociador">Rociador</string>
+    <string name="brigada">Brigada</string>
+    <string name="distrito">Distrito</string>
+    <string name="area">Area de Salud</string>
+    <string name="household">Vivienda</string>
+    <string name="temporada">Temporada rociado</string>
+    
+    <string name="ident">Identificador</string>
+    <string name="code">Código</string>
+    <string name="name">Nombre</string>
+    
+    <string name="viewdata"> Ver datos</string>
+    <string name="viewmap"> Ver mapa</string>
+    <string name="viewlist"> Ver lista</string>
+    
+    <string name="bydate"> Por fecha</string>
+    <string name="bylocalidad"> Por localidad</string>
+    <string name="bystatus"> Por estado</string>
+    <string name="nopermiso">No tiene permisos necesarios para ingresar!</string>
+    
+    <string name="persons">Composición de la familia</string>
+    
+    
+    
+</resources>

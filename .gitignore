@@ -1,0 +1,13 @@
+/vca/.settings/
+/vca/target/
+/vca/.project
+
+/vca-app/.settings/
+/vca-app/assets/
+/vca-app/bin/
+/vca-app/gen/
+/vca-app/.classpath
+/vca-app/.project
+
+vca.zip
+vca-app.zip

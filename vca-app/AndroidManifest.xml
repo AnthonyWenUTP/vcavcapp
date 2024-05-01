@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.clintonhealthaccess.vca"
+    android:versionCode="1"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true" />
+
+    <application
+        android:allowBackup="false"
+        android:name=".VcaApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.clintonhealthaccess.vca.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.clintonhealthaccess.vca.MainActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.preferences.PreferencesActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.ListaLocalidadesActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.MapaActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.ListaCensadoresActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.ListaSupervisoresActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.ListaRociadoresActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.ListaBrigadasActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.ListaTemporadasActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.MenuCensoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.MenuCensoCasaActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.CensoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.UbicacionActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.GeoPointActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.ViewDataActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.ViewReportActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.VerCasaActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.VerFamiliaActivity" 
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="org.clintonhealthaccess.vca.activities.irs.RociadoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.irs.RociadoPreAvisoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.irs.MapaPreAvisoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.irs.MapaRociarActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.irs.MapaSupervisionActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.irs.MapaRociadoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.irs.RociadoRociarActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.irs.RociadoSupervisionActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.irs.MenuRociadoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.irs.ViewDataActivity2" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.irs.SeleccionarTemporadaActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.irs.MenuRociadoCasaActivity" 
+            android:screenOrientation="portrait" />
+        
+        
+        <activity android:name="org.clintonhealthaccess.vca.activities.mtilds.SeleccionarCicloActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mtilds.SeleccionarCasaCicloActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mtilds.MenuMosquiterosActivity" 
+            android:screenOrientation="portrait" />      
+        <activity android:name="org.clintonhealthaccess.vca.activities.mtilds.MenuMosquiterosCasaActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mtilds.EvaluacionMosquiterosPersonaActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mtilds.EvaluacionMosquiteroIndividualActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mtilds.EntregaVisitasActivity" 
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.HouseholdActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.PersonActivity" 
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.irs.SprayActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.irs.SupervisionActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.irs.SprayActivityRociado" 
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.mtilds.EntregaTargetActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.mtilds.EntregaVisitaActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.mtilds.EvaluacionPersonaActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.mtilds.EvaluacionMosquiteroActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.mtilds.EvaluacionActivity" 
+            android:screenOrientation="portrait" />
+        
+        
+        <activity android:name="org.clintonhealthaccess.vca.server.DownloadCatalogosActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.server.DownloadCasasActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.server.DownloadAllActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.server.UploadViviendasActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.server.UploadVisitasActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.server.UploadDatosMapeoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.server.DownloadDatosMapeoActivity" 
+            android:screenOrientation="portrait" />
+        
+        
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.MenuMapeoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.CasosActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.PuntosDxActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.MuestrasActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.CriaderosActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.VisPuntosDxActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.CriaderoTxsActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.PuntosCriaderosActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.MapaCasosActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.MapaMuestrasActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.MapaPuntosDxActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.UbicacionCasoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.UbicacionInfeccionCasoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.UbicacionMuestraActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.UbicacionPuntoDxActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.AddPuntoCriaderoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.MenuCasoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.MenuMuestraActivity" 
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.MenuPuntoDxActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.MenuCriaderoActivity" 
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="org.clintonhealthaccess.vca.activities.mapeo.MenuCasoTxSupActivity" 
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.mapeo.CaseActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.mapeo.MuestraActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.mapeo.PuntoDxActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.mapeo.CriaderoActivity" 
+            android:screenOrientation="portrait" />
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.mapeo.VisPuntoDxActivity" 
+            android:screenOrientation="portrait" />
+        
+        <activity android:name="org.clintonhealthaccess.vca.activities.enterdata.mapeo.CriaderoTxActivity" 
+            android:screenOrientation="portrait" />
+        
+    </application>
+
+</manifest>

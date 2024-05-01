@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="house_search">Ingresar/Editar Viviendas</string>
+    <string name="house_add">Agregar Vivienda</string>
+    <string name="ubc_add">Guardar ubicación</string>
+    <string name="house_new">Vivienda Nueva</string>
+    <string name="confirm_house_add">Desea agregar una nueva vivienda?</string>
+    <string name="confirm_house_edit">Desea editar esta vivienda?</string>
+    
+    <string name="introMessage">Agregando/Editando Vivienda</string>
+    <string name="introMessageHint">Favor ingresar la información requerida</string>
+    
+    <string name="codeHouse">Número de la vivienda</string>
+    <string name="codeHouseHint">Identificador único de la vivienda. Es un valor requerido.</string>
+    
+    <string name="censusTaker">Censador</string>
+    <string name="censusTakerHint">Nombre de la persona que hace el censo. Es un valor requerido.</string>
+    
+    <string name="censusDate">Fecha de censo</string>
+    <string name="censusDateHint">Fecha en que esta vivienda fué censada. Es un valor requerido.</string>
+    
+    <string name="inhabited">Vivienda Habitada?</string>
+    <string name="inhabitedHint">Indica si la vivienda se encuentra habitada. Es un valor requerido.</string>
+    
+    <string name="ubicacion">Ubicación</string>
+    <string name="ubicacionHint">Ubicacion de la casa por GPS:</string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    
+    <string name="ownerName">Jefe de Familia</string>
+    <string name="ownerNameHint">Nombre y apellido de la persona responsable de la vivienda. Es un valor requerido.</string>
+    
+    <string name="habitants">Numero de habitantes</string>
+    <string name="habitantsHint">Cantidad de personas que habitan la vivienda</string>
+    
+    <string name="material">Materiales de la estructura principal (paredes)</string>
+    <string name="materialHint">Seleccionar material predominante de la estructura principal. Es un valor requerido.</string>
+    
+    <string name="rooms">Numero de cuartos de la vivienda.</string>
+    <string name="roomsHint">Numero total de cuartos. Es un valor requerido entre 1 y 20</string>
+    
+    <string name="sprRooms">Numero de cuartos rociables de la vivienda.</string>
+    <string name="sprRoomsHint">Numero total de cuartos rociables. Es un valor requerido entre 1 y 20</string>
+    
+    <string name="noSprooms">Numero de cuartos no rociables de la vivienda.</string>
+    <string name="noSproomsHint">Numero total de cuartos no rociables. Es un valor requerido entre 1 y 20</string>
+    
+    <string name="noSproomsReasons">Razones cuartos no rociables</string>
+    <string name="noSproomsReasonsHint">Razones porque los cuartos no son rociables.</string>
+    
+    <string name="personasCharlas">Número de personas (Charlas)</string>
+    <string name="personasCharlasHint">Número total de personas a las que se le impartió charlas educativas. Es un valor requerido entre 0 y 30</string>
+    
+    <string name="sleep">Cuantos sitios para dormir hay en la casa?</string>
+    <string name="sleepHint">Anotar el número de sitios para dormir que existen en la casa. Es un valor requerido entre 0 y 30</string>
+    
+    <string name="numNets">Cuantos mosquiteros tienen en la casa?</string>
+    <string name="numNetsHint">Anotar el número de mosquiteros que tienen en la casa. Es un valor requerido entre 0 y 30</string>
+    
+    <string name="obsHouse">Observaciones.</string>
+    <string name="obsHouseHint">Observaciones en la vivienda.</string>
+    
+    <string name="masculinos">Número de habitantes masculinos</string>
+    <string name="masculinosHint">Cantidad de personas de sexo masculino que habitan la vivienda. Es un valor requerido entre 0 y 25</string>
+    
+    <string name="femeninos">Número de habitantes femeninos</string>
+    <string name="femeninosHint">Cantidad de personas de sexo femenino que habitan la vivienda. Es un valor requerido entre 0 y 25</string>
+    
+    <string name="menores5">Número de niños menores de 5 años</string>
+    <string name="menores5Hint">Cantidad de niños menores de 5 años que habitan la vivienda</string>
+    
+    
+    <string name="menores5masc">Número de niños menores de 5 años masculinos</string>
+    <string name="menores5mascHint">Cantidad de niños menores de 5 años masculinos que habitan la vivienda. Es un valor requerido entre 0 y el total de masculinos</string>
+    
+   	<string name="menores5fem">Número de niños menores de 5 años femeninos</string>
+    <string name="menores5femHint">Cantidad de niños menores de 5 años femeninos que habitan la vivienda. Es un valor requerido entre 0 y el total de femeninos</string>
+    
+    <string name="embarazadas">Número de embarazadas</string>
+    <string name="embarazadasHint">Cantidad de embarazadas que habitan la vivienda. Es un valor requerido entre 0 y el total de mujeres</string>
+    
+    <string name="sitiosDormirCama">Número de sitios para dormir tipo cama.</string>
+    <string name="sitiosDormirCamaHint">Número de espacios para dormir que son camas. Requerido, de 0 a 10</string>      
+    <string name="sitiosDormirHamaca">Número de sitios para dormir tipo hamaca</string>
+    <string name="sitiosDormirHamacaHint">Número de espacios para dormir que son hamacas. Requerido, de 0 a 10</string>   
+    <string name="sitiosDormirSuelo">Número de sitios para dormir tipo suelo</string>
+    <string name="sitiosDormirSueloHint">Número de espacios para dormir en el suelo. Requerido, de 0 a 10</string> 
+    <string name="sitiosDormirOtro">Número de sitios para dormir de otro tipo</string>
+    <string name="sitiosDormirOtroHint">Número de espacios para dormir que son de otro tipo. Requerido, de 0 a 10</string>
+    <string name="mtildExistentes">Número de pabellones con insecticida existentes</string>
+    <string name="mtildExistentesHint">Número de pabellones con insecticida existentes. Requerido, de 0 a 20</string>
+    <string name="mosqSinInsecticida">Número de pabellones sin insecticida</string>
+    <string name="mosqSinInsecticidaHint">Número de pabellones sin insecticida existentes en la vivienda antes de esta visita. Requerido, de 0 a 20</string>
+    
+    
+    
+</resources>

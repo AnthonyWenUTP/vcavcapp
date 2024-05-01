@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="confirm_person_add">Desea agregar una nueva persona?</string>
+    <string name="confirm_person_edit">Desea editar esta persona?</string>
+    
+    <string name="introMessagePerson">Agregando/Editando Persona</string>
+    <string name="introMessagePersonHint">Favor ingresar la información requerida</string>
+    
+    <string name="codePerson">Identificador de la Persona</string>
+    <string name="codePersonHint">Número de identificación de la persona. Es un valor requerido.</string>
+    
+    <string name="namePerson">Nombre de la persona</string>
+    <string name="namePersonHint">Nombres y apellidos de la persona. Es un valor requerido.</string>
+    
+    <string name="sexPerson">Sexo de la persona</string>
+    <string name="sexPersonHint">Seleccionar el sexo de la persona. Es un valor requerido.</string>
+    
+    <string name="agePerson">Edad de la persona</string>
+    <string name="agePersonHint">Ingresar la edad de la persona. Es un valor requerido, para menores de 1 año ingresar 0.</string>
+    
+    <string name="pregPerson">Está embarazada?</string>
+    <string name="pregPersonHint">Seleccionar la opción correcta.</string>
+    
+    <string name="obsPerson">Observaciones.</string>
+    <string name="obsPersonHint">Observaciones de la persona.</string>
+    
+</resources>

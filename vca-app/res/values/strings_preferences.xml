@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="preferences">Configuración</string>
+    
+    <string name="server_preferences">Configuración Servidor</string>
+    <string name="default_server_url">http://18.116.178.75:8080/vca/</string>
+    <string name="server_url">URL de servidor</string>
+    <string name="check_server">Verificar en el servidor</string>
+    <string name="check_wipe">Limpiar base de datos</string>
+    <string name="url_error">Error en la dirección</string>
+    <string name="change_server_url">Cambiar URL de servidor</string>
+    
+    <string name="app_preferences">Configuración Aplicación</string>
+    <string name="update_app_preferences">Actualizar Aplicación VCA</string>
+    <string name="update_barcodeapp_preferences">Actualizar Aplicación Código Barras</string>
+    <string name="version_app_preferences">Versión 4.0</string>
+    <string name="versiondate_app_preferences">01 Ago, 2023</string>
+    
+    <string name="default_localidad">No hay localidad seleccionada</string>
+    <string name="choose_localidad">Seleccionar localidad</string>
+    
+    <string name="default_temporada">No hay temporada seleccionada</string>
+    <string name="choose_temporada">Seleccionar temporada</string>
+    
+    <string name="default_censador">No hay censador seleccionado</string>
+    <string name="choose_censador">Seleccionar censador</string>
+    
+    <string name="default_supervisor">No hay supervisor seleccionado</string>
+    <string name="choose_supervisor">Seleccionar supervisor</string>
+    
+    <string name="default_rociador">No hay rociador seleccionado</string>
+    <string name="choose_rociador">Seleccionar rociador</string>
+    
+    <string name="default_brigada">No hay brigada seleccionado</string>
+    <string name="choose_brigada">Seleccionar brigada</string>
+    
+    <string name="lastsync">Última sincronización</string>
+  
+</resources>

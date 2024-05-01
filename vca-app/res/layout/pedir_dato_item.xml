@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip"
+    android:paddingTop="8dip"
+    android:paddingBottom="8dip">
+    
+    
+        <TextView
+            android:id="@+id/question_text"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:paddingRight="8dip"
+            android:paddingLeft="8dip"
+            android:textSize="24sp"
+        />
+            
+		<EditText
+	        android:id="@+id/parametro"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1.0"
+	        android:hint="@string/parametro"
+	        android:inputType="text"
+	        android:textSize="28sp"
+	        android:maxLines="1"
+	        android:singleLine="true"/>
+
+    
+</LinearLayout>
