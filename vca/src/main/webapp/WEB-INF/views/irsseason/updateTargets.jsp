@@ -54,10 +54,8 @@
   	<jsp:include page="../fragments/sideBar.jsp" />
     <!-- Main content -->
     <main class="main">
-
       <spring:url value="/irs/season/updateTarget/" var="updateTarget"></spring:url>
   	  <spring:url value="/irs/targets" var="targetUrl"></spring:url>	
-
       <!-- Breadcrumb -->
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="<spring:url value="/" htmlEscape="true "/>"><spring:message code="home" /></a></li>
@@ -66,32 +64,32 @@
         <li class="breadcrumb-item active"><spring:message code="update" /></li>
         
       </ol>
-    <!-- Container -->
-	  <div class="container-fluid">
+      <!-- Container -->
+      <div class="container-fluid">
         <div class="animated fadeIn">
-        	<div class="row">
+          <div class="row">
             <div class="col-md-12">
               <div class="card">
                 <div class="card-header">
                   <i class="fa fa-calendar-times-o"></i> <spring:message code="Update" />
                   <div class="card-actions">
                   </div>
+                </div>
 
-
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <form action="#" autocomplete="off" id="update-form">
-                          <div class="form-group row">
-                              <div class="col-sm-4">
-                              <label><spring:message code="season" /></label>
-                              <select id="irsSeason" name="irsSeason" class="form-control select2-single">
-                                <c:forEach items="${temporadas}" var="temporada">
-                                    <option value="${temporada.ident}">${temporada.name}</option>
-                                </c:forEach>
-                              </select>
-                            </div>
-                          <div class="col-sm-4">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <form action="#" autocomplete="off" id="update-form">
+                        <div class="form-group row">
+                          <div class="col-sm-6">
+                            <label><spring:message code="season" /></label>
+                            <select id="irsSeason" name="irsSeason" class="form-control select2-single">
+                              <c:forEach items="${temporadas}" var="temporada">
+                                <option value="${temporada.ident}">${temporada.name}</option>
+                              </c:forEach>
+                            </select>
+                          </div>
+                          <div class="col-sm-6">
                             <label><spring:message code="locality" /></label>
                             <select id="local" name="local" class="form-control select2-single">
                               <option value="ALL"><spring:message code="all"/></option>
@@ -100,29 +98,25 @@
                               </c:forEach>
                             </select>
                           </div>
-
-                          <div class="form-group">
-                            <button type="submit" class="btn btn-primary" id="guardar"><i class="fa fa-save"></i>&nbsp;<spring:message code="save" /></button>
-                            <a href="${fn:escapeXml(targetUrl)}" class="btn btn-danger"><i class="fa fa-undo"></i>&nbsp;<spring:message code="cancel" /></a>
-                          </div>
-
-                        </form>
-                      </div>
+                        </div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-primary" id="guardar"><i class="fa fa-save"></i>&nbsp;<spring:message code="save" /></button>
+                          <spring:url value="/irs/season/targets/" var="targetUrl"></spring:url>	
+                          <a href="${fn:escapeXml(targetUrl)}" class="btn btn-danger"><i class="fa fa-undo"></i>&nbsp;<spring:message code="cancel" /></a>
+                        </div>
+                      </form>
                     </div>
                   </div>
-
-
-
                 </div>
+
               </div>
             </div>
-            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
     </main>
-
-    </div>
+  </div>
 
 
   <!-- Pie de p�gina -->
