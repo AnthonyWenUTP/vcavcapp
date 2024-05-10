@@ -211,6 +211,7 @@ public class IrsSeasonController {
 							newTarget.setRecordUser(usuarioActual);
 							newTarget.setRecordDate(new Date());
 							newTarget.setEstado('2');
+							newTarget.setLocal(casa.getLocal());
 							this.temporadaService.saveTarget(newTarget);
 					}
 				}
@@ -558,7 +559,9 @@ public class IrsSeasonController {
      */
     @RequestMapping(value = "/targets/updateTarget/", method = RequestMethod.GET)
 	public String addEntity2(Model model) {
-    	List<Localidad> localidades = localidadService.getActiveLocalitiesUsuario(SecurityContextHolder.getContext().getAuthentication().getName());
+		List<IrsSeason> temporadas = this.temporadaService.getIrsSeasons();
+    	model.addAttribute("temporadas",temporadas);
+    	List<Localidad> localidades = localidadService.getLocalSeason(SecurityContextHolder.getContext().getAuthentication().getName());
     	model.addAttribute("localidades", localidades);
     	return "irsseason/updateTargets";
 	}
