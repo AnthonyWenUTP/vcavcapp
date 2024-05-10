@@ -12,7 +12,6 @@ import javax.persistence.UniqueConstraint;
 
 import org.clintonhealthaccess.vca.domain.BaseMetaData;
 import org.clintonhealthaccess.vca.domain.Household;
-import org.clintonhealthaccess.vca.domain.Localidad;
 import org.clintonhealthaccess.vca.domain.audit.Auditable;
 import org.hibernate.annotations.ForeignKey;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -41,7 +40,6 @@ public class Target extends BaseMetaData implements Auditable{
 	private String sprayStatus;
 	private Date lastModified;
 	private Personal assignedTo;
-	private Localidad local;
 	
 	public Target() {
 		super();
