@@ -127,6 +127,10 @@
 		                  <div class="row float-right mr-4" >  
 		                    	<button type="submit" class="btn btn-primary" id="buscarvivienda""><i class="fa fa-check"></i>&nbsp;<spring:message code="search" /></button>
 				          </div>
+						  <div class="row float-right mr-4" >
+							<spring:url value="/irs/season/targets/updateTarget/" var="updateTarget"/>
+              				<button id="actualizarMetas" onclick="location.href='${fn:escapeXml(updateTarget)}'" type="button" class="btn btn-outline-primary"><i class="fa fa-plus"></i>&nbsp; <spring:message code="update" /></button><br><br>	
+					 	  </div>
 	                  	</form>
                   	</div>
                   </div>

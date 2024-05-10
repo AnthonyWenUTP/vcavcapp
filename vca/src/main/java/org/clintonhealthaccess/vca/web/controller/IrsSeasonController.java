@@ -550,6 +550,18 @@ public class IrsSeasonController {
     	}
     	return redirecTo;	
     }
+
+	/**
+     * Custom handler for adding.
+     * @param model Modelo enlazado a la vista
+     * @return a ModelMap with the model attributes for the view
+     */
+    @RequestMapping(value = "/targets/updateTarget/", method = RequestMethod.GET)
+	public String addEntity2(Model model) {
+    	List<Localidad> localidades = localidadService.getActiveLocalitiesUsuario(SecurityContextHolder.getContext().getAuthentication().getName());
+    	model.addAttribute("localidades", localidades);
+    	return "irsseason/updateTargets";
+	}
 	
     private ResponseEntity<String> createJsonResponse( Object o )
 	{
