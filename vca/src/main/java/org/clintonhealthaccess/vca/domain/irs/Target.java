@@ -12,7 +12,7 @@ import javax.persistence.UniqueConstraint;
 
 import org.clintonhealthaccess.vca.domain.BaseMetaData;
 import org.clintonhealthaccess.vca.domain.Household;
-import org.clintonhealthaccess.vca.domain.Localidad;
+
 import org.clintonhealthaccess.vca.domain.audit.Auditable;
 import org.hibernate.annotations.ForeignKey;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -41,21 +41,20 @@ public class Target extends BaseMetaData implements Auditable{
 	private String sprayStatus;
 	private Date lastModified;
 	private Personal assignedTo;
-	private Localidad local;
+
 	
 	public Target() {
 		super();
 	}
 	
 	public Target(String ident, IrsSeason irsSeason, Household household, String sprayStatus,
-			Localidad local, Date lastModified, String username) {
+			Date lastModified, String username) {
 		super();
 		this.ident = ident;
 		this.irsSeason = irsSeason;
 		this.household = household;
 		this.sprayStatus = sprayStatus;
 		this.lastModified = lastModified;
-		this.local = local;
 		this.setRecordDate(lastModified);
 		this.setRecordUser(username);
 	}
@@ -142,16 +141,6 @@ public class Target extends BaseMetaData implements Auditable{
 		this.assignedTo = assignedTo;
 	}
 
-	@ManyToOne(optional=false)
-	@JoinColumn(name="local")
-    @ForeignKey(name = "FK_TAR_LOCALIDAD")
-	public Localidad getLocal() {
-		return local;
-	}
-
-	public void setLocal(Localidad local) {
-		this.local = local;
-	}
 
 
 	@Override
