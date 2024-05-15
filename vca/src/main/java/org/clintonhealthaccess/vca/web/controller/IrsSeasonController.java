@@ -565,6 +565,62 @@ public class IrsSeasonController {
     	return "irsseason/updateTargets";
 	}
 	
+
+	@RequestMapping( value="/targets/saveUpdateTarget/", method=RequestMethod.POST)
+	public ResponseEntity<String> processEntity2( @RequestParam(value="irsSeason", required=true) String irsSeason
+	        , @RequestParam( value="localidad", required=true) String localidad)
+	{
+    	try{
+    		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+    		
+    		Date fechaHoy = null;
+    		String fechaactual = formatter.format((new Date()));
+    		fechaHoy=formatter.parse(fechaactual);
+    		
+			IrsSeason temporada = this.temporadaService.getIrsSeason(irsSeason);
+    		String usuarioActual = SecurityContextHolder.getContext().getAuthentication().getName();
+			Integer counter = 0;
+			List<Household> casasEnLocalidad = this.householdService.getNewHouses(irsSeason, localidad, usuarioActual);
+				for(Household casa:casasEnLocalidad){
+						counter++;
+						Target newTarget = new Target();
+						String ident = new UUID(counter.hashCode(),new Date().hashCode()).toString();
+						newTarget.setIdent(ident);
+						newTarget.setHousehold(casa);
+						newTarget.setIrsSeason(temporada);
+						if(casa.getSprRooms()!=null) {
+							if(casa.getSprRooms()>0) {
+								newTarget.setSprayStatus("NOTVIS");
+							}
+							else {
+								newTarget.setSprayStatus("DROPPED");
+							}
+						}
+						else {
+							newTarget.setSprayStatus("DROPPED");
+						}
+						newTarget.setLastModified(fechaHoy);
+						newTarget.setRecordUser(usuarioActual);
+						newTarget.setRecordDate(new Date());
+						newTarget.setEstado('2');
+						this.temporadaService.saveTarget(newTarget);
+				}
+				return createJsonResponse(temporada);
+    	}
+		catch (DataIntegrityViolationException e){
+			String message = e.getMostSpecificCause().getMessage();
+			Gson gson = new Gson();
+		    String json = gson.toJson(message);
+		    return createJsonResponse(json);
+		}
+		catch(Exception e){
+			Gson gson = new Gson();
+		    String json = gson.toJson(e.toString());
+		    return createJsonResponse(json);
+		}
+    	
+	}
+
     private ResponseEntity<String> createJsonResponse( Object o )
 	{
 	    HttpHeaders headers = new HttpHeaders();
