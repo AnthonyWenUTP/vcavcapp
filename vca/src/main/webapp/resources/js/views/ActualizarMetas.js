@@ -1,32 +1,63 @@
-var ProcessSearch = function () {
-	
+var ProcessEntity = function () {
+    // Function to populate options in "Local Identifiers" select box based on metas data
+    function populateOptions() {
+        var irsSeasonValue = document.getElementById("irsSeason").value;
+        var localidad = document.getElementById("localidad");
+        localidad.innerHTML = ""; // Clear existing options
+        var meta0Select = document.getElementById("meta0");
+        var meta1Select = document.getElementById("meta1");
+        var meta2Select = document.getElementById("meta2");
+        for (var i = 0; i < meta0Select.options.length; i++) {
+            if (meta0Select.options[i].value == irsSeasonValue) {
+                var option = document.createElement("option");
+                option.value = meta1Select.options[i].value;
+                option.text = meta2Select.options[i].value;
+                localidad.appendChild(option);
+            }
+        }
+    }
+
+    // Attach event listener to "IRS Season" select box
+    document.getElementById("irsSeason").addEventListener("change", function() {
+        // Call the function to populate options whenever IRS Season is changed
+        populateOptions();
+    });
+
+    // Populate options when the page loads
+    populateOptions();
+
     return {
         //main function to initiate the module
         init: function (parametros) {	
         
-            $(document).on('click', 'button[type="submit"]', function() {
-                var buttonId = $(this).attr('id');
-                if (buttonId === 'buscarvivienda') {
-                    processReport();
-                } else if (buttonId === 'actualizarvivienda') {
-                    processReport2();
+            $( '#update-form' ).validate( {
+                rules: {
+                    localidad: {
+                        required: true
+                    },
+                    irsSeason: {
+                        required: true
+                    }
+                },
+                submitHandler: function () {
+                    processEntidad2();
                 }
             });
             
-            function processReport2() {
-                // Show loading message
+            function processEntidad2() {
                 $.blockUI({ message: parametros.waitmessage });
-                var data = { season: $('#irsSeason').val() };
-                $.post(parametros.updateTargetUrl, data)
-                    .done(function(response) {
-                        console.log("POST request successful");
-                    })
-                    .fail(function(xhr, status, error) {
-                        console.error("POST request failed:", error);
-                    })
-                    .always(function() {
+                console.log("Sending POST request to:", parametros.saveUrl);
+
+                $.post(parametros.saveUrl, $('#update-form').serialize())
+                    .done(function(data, textStatus, jqXHR) {
+                        console.log("AJAX request succeeded:");
+                        console.log("Response data:", data);
                         $.unblockUI();
-                        console.log("Nada")
+                    })
+                    .fail(function(jqXHR, textStatus, errorThrown) {
+                        console.error("AJAX request failed:", textStatus, errorThrown);
+                        alert("AJAX request failed: " + textStatus + "\nError: " + errorThrown);
+                        $.unblockUI();
                     });
             }
         
