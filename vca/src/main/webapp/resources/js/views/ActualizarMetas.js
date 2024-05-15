@@ -45,14 +45,15 @@ var ProcessEntity = function () {
             });
             
             function processEntidad2() {
-                $.blockUI({ message: parametros.waitmessage });
-                console.log("Sending POST request to:", parametros.saveUrl);
 
                 $.post(parametros.saveUrl, $('#update-form').serialize())
                     .done(function(data, textStatus, jqXHR) {
-                        console.log("AJAX request succeeded:");
-                        console.log("Response data:", data);
-                        $.unblockUI();
+                        $.blockUI({ message: parametros.successmessage });
+                        setTimeout(function() { 
+				            $.unblockUI({ 
+				                onUnblock: function(){ window.location.href = parametros.targetUrl; } 
+				            }); 
+				        }, 1000); 
                     })
                     .fail(function(jqXHR, textStatus, errorThrown) {
                         console.error("AJAX request failed:", textStatus, errorThrown);
